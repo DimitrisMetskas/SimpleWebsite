@@ -1,33 +1,12 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
-import { Button } from './Button';
 
 function Navbar() {
     const [click, setClick]= useState(false);
-    const [button, setButton] =useState(true);
 
     const handleClick = () =>setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    
-    //tha afairei to button kai tha to prosthetei ean einai megali i othoni
-    const showButton = () => {
-        if(window.innerWidth <=960){
-            setButton(false);
-        }else{
-            setButton(true);
-        }
-    };
-
-//gia na ginei render mia fora kai na min xanaginei
-    useEffect(() => {
-        showButton();
-    }, []);
-
-
-
-//otan ginetai resize to screen na faineto to showButton
-    window.addEventListener('resize', showButton);
 
     return (
     <>
