@@ -3,6 +3,6 @@ import '../../App.css'
 
 export default function ContactUs() {
   return (
-    <h1 className='sign-up'>CONTACT US</h1>
+    <h1 className='contact-us'>CONTACT US</h1>
   )
 }
