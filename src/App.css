@@ -42,3 +42,23 @@
   color: #fff;
   font-size: 100px;
 }
+
+/* edo metria othoni */
+@media (max-width: 760px) {
+.services,
+.about-us,
+.contact-us {
+    font-size: 80px;
+    color: black;
+  }
+}
+
+/* edo mikri othoni */
+@media (max-width: 428px) {
+  .services,
+  .about-us,
+  .contact-us {
+    font-size: 40px;
+    color: green;
+  }
+}
