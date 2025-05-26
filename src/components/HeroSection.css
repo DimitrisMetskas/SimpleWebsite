@@ -10,6 +10,9 @@ video {
     /* parakato einai ean thelo na bgalo to video kai na valo photo,(kalo einai na afaireso to 
     video apo to HeroSection.js gia na min trexei sto background kai to video apo ayto to arxeio */
     /* background: url('../../public/images/img-home.jpg') center center/cover no-repeat; */
+    margin: 0;
+    overflow-x: hidden;
+
     height: 100vh;
     width: 100%;
     display: flex;
