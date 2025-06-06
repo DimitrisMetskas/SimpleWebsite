@@ -5,9 +5,9 @@ import './App.css';
 import Navbar from './components/Navbar.js'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/pages/Home.js';
-import Services from './components/pages/Services.js';
-import AboutUs from './components/pages/AboutUs.js';
-import ContactUs from './components/pages/ContactUs.js';
+import Products from './components/pages/Products.js';
+import Contact from './components/pages/Contact.js';
+import OurStory from './components/pages/OurStory.js';
 
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
       <Routes>
         {/* parakato mas leei oti kathe fora poy einai sto path='/' tha anoigei to Home component */}
         <Route path="/" exact element={<Home/>}/>
-        <Route path="/services" element={<Services />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/our-story" element={<OurStory />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
     </>

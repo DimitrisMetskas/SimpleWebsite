@@ -1,110 +1,48 @@
-import React  from 'react'
 import {Link} from 'react-router-dom'
-import { Button } from './Button';
+// import { Button } from './Button';
 import './Footer.css';
+import logo from '../assets/map.png';
 
 function Footer() {
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-            Join the Adventure newsletter to receive our best vacation deals
+            Find Us There   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
         </p>
-        <p className='footer-subscription-text'>
-            You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
+        {/* <div className='input'>
             <form>
                 <input type='email' name='email' placeholder='Your Email'
                 className='footer-input'/>
                 <Button buttonStyle='btn--outline'>Subscribe</Button> 
             </form>
-        </div>
+        </div> */}
+        <a href="https://www.google.com/maps/place/Technical+Office+Soulis+Ioannis+Engineering+%26+Construction/@36.4365384,28.2258952,19z/data=!4m6!3m5!1s0x14956139635aec8b:0x2fb6486186f105b6!8m2!3d36.4366398!4d28.2258751!16s%2Fg%2F11h6nrnh86?entry=ttu&g_ep=EgoyMDI1MDYwMi4wIKXMDSoASAFQAw%3D%3D">
+          <img  className='footer-image fade-img' src={logo} alt=""></img> 
+        </a>
+        <p className='footer-subscription-heading'>
+          Or Contact With Us Here    <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+        </p>
       </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-          </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div>
-        </div>
-      </div>
+            
       <section className='social-media'>
         <div  className='social-media-wrap'>
-            <div className='footer-logo'>
-                <Link to='/' className='social-logo'>
-                    TRVL <i className='fab fa-typo3'></i>
-                </Link>
-            </div>
-            <small className='website-rights'>TRVL 2025</small>
             <div className='social-icons'>
-                <Link
-                class='social-icon-link facebook'
-                to='/'
-                target='_blank'
-                aria-label='Facebook'
-                >
-                <i class='fab fa-facebook-f' />
-                </Link>
-                <Link
-                class='social-icon-link instagram'
-                to='/'
-                target='_blank'
-                aria-label='Instagram'
-                >
-                <i class='fab fa-instagram' />
-                </Link>
-                <Link
-                class='social-icon-link youtube'
-                to='/'
-                target='_blank'
-                aria-label='Youtube'
-                >
-                <i class='fab fa-youtube' />
-                </Link>
-                <Link
-                class='social-icon-link twitter'
-                to='/'
-                target='_blank'
-                aria-label='Twitter'
-                >
-                <i class='fab fa-twitter' />
-                </Link>
-                <Link
-                class='social-icon-link linkedin'
-                to='/'
-                target='_blank'
-                aria-label='LinkedIn'
-                >
-                <i class='fab fa-linkedin' />
-                </Link>
+                <a class='social-icon-link' href="https://www.facebook.com/soulisengineering.gr/photos_by">
+                  <i  class="fab fa-facebook-f" ></i>
+                </a>
+                <a class='social-icon-link' href="mailto:soulis_ioannis@yahoo.gr">
+                  <i  class="fa fa-envelope-o" ></i>
+                </a>
+                <a class='social-icon-link' href="https://22410.gr/archives/companies/%cf%83%ce%bf%cf%85%ce%bb%ce%b7%cf%83-%ce%bc-%ce%b9%cf%89%ce%b1%ce%bd%ce%bd%ce%b7%cf%83">
+                  <i  class="fa fa-internet-explorer" ></i>
+                </a>
+                <a class='social-icon-link' href="tel:+6936991497">
+                  <i class="fa fa-phone"></i>
+                </a>
+                <a class='social-icon-link' href="tel:2241302603">
+                  <i class="fa fa-mobile"></i>
+                </a>
             </div>
         </div>
       </section>

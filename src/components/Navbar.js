@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
+import logo from '../assets/small-logo1.jpg';
 
 function Navbar() {
     const [click, setClick]= useState(false);
@@ -13,8 +14,10 @@ function Navbar() {
         <nav className='navbar'>
             <div className='navbar-container'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    ETAIRIA 
-                    <i className='fab fa-typo3'/>
+                    S&A Engineering 
+                    <img className='navbar-image' src={logo} alt=""></img> 
+                    {/* <i className='fab fa-typo3'/> */}
+                    {/* <span class="material-symbols-outlined">bolt</span> */}
                     {/* <i className='fa-solid fa-cloud'/> */}
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
@@ -24,23 +27,19 @@ function Navbar() {
                 {/* na anoigei to menu */}
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+                        <Link to='/our-story' className='nav-links' onClick={closeMobileMenu}>
+                            Our Story
                         </Link>    
                     </li>
                     <li className='nav-item'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                            Services
+                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            Products
                         </Link>    
                     </li>
+
                     <li className='nav-item'>
-                        <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
-                            AboutUs
-                        </Link>    
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/contact-us' className='nav-links' onClick={closeMobileMenu}>
-                            ContactUs
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            Contact
                         </Link>    
                     </li>
                 </ul>

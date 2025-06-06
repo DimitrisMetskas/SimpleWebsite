@@ -6,9 +6,9 @@
 }
 
 .home,
-.services,
-.about-us,
-.contact-us {
+.products,
+.our-story,
+.contact {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -16,38 +16,39 @@
   font-size: 3rem;
 }
 
-.services {
-  background-image: url('/public/images/img-2.jpg');
+.products {
+  background-image: url('/public/images/logo13.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: black;
   font-size: 100px;
+  
 }
 
-.about-us {
-  background-image: url('/public/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.contact-us {
-  background-image: url('/public/images/img-8.jpg');
+.our-story {
+  background-image: url('/public/images/logo11.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
+  color: black;
+  font-size: 100px;
+}
+
+.contact {
+  background-image: url('/public/images/logo14.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
   font-size: 100px;
 }
 
 /* edo metria othoni */
 @media (max-width: 760px) {
-.services,
-.about-us,
-.contact-us {
+.products,
+.contact,
+.our-story {
     font-size: 80px;
     color: black;
   }
@@ -55,9 +56,9 @@
 
 /* edo mikri othoni */
 @media (max-width: 428px) {
-  .services,
-  .about-us,
-  .contact-us {
+  .products,
+  .our-story,
+  .contact {
     font-size: 40px;
     color: green;
   }
