@@ -14,7 +14,7 @@ function Navbar() {
         <nav className='navbar'>
             <div className='navbar-container'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    S&A Engineering 
+                    <strong>S&A Engineering</strong>
                     <img className='navbar-image' src={logo} alt=""></img> 
                     {/* <i className='fab fa-typo3'/> */}
                     {/* <span class="material-symbols-outlined">bolt</span> */}
@@ -28,18 +28,18 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/our-story' className='nav-links' onClick={closeMobileMenu}>
-                            Our Story
+                            <strong>Our Story</strong>
                         </Link>    
                     </li>
                     <li className='nav-item'>
                         <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            Products
+                            <strong>Products</strong>                            
                         </Link>    
                     </li>
 
                     <li className='nav-item'>
                         <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                            Contact
+                            <strong>Contact</strong>
                         </Link>    
                     </li>
                 </ul>

@@ -87,9 +87,9 @@ const sliderData = [
 function ProductGallery() {
   return (
     <div className='cards'> 
-      <h1><u>Licensing</u></h1>
+      <h1>Licensing</h1>
       <Slider images={sliderData[0]} />
-      <h1><u>Building Plans</u></h1>
+      <h1>Building Plans</h1>
       <Slider images={sliderData[1]} />
       <h1>Energy Upgrade</h1>
       <Slider images={sliderData[2]} />

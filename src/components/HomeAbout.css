@@ -4,11 +4,19 @@ h1 {
 }
 p {
   margin-top: 20px;
-  color:#171310;  
+  color:#171310; 
+  text-align: justify;
+  text-indent: 2em;
+  font-family: 'Georgia', serif;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
 }
 .homeabout {
   padding-top: 4rem;
   padding-bottom: 3rem;
+  padding-right: 10%;
+  padding-left: 10%;
   /* background-color: #fff; */
 }
 
@@ -30,6 +38,8 @@ p {
   align-items: center;
   width: 60%;
   padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
  
 .homeabout-button {
@@ -52,7 +62,7 @@ p {
     display: block;
   }
   .homeabout-image{
-    width: 90%;
+    width: 100%;
   }
   .homeabout__wrapper {
     width: 100%;

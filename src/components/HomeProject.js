@@ -9,7 +9,7 @@ function HomeProject() {
         <div className='homeproject__wrapper'>
             <ul className='homeproject__items'>
                 <CardItem 
-                  src='images/gallery.jpg'
+                  src='images/logo-gallery.jpg'
                   text='Architectural Design, Structural Engineering, Building Permits, Construction & Renovation,Energy Efficiency Upgrades'
                   label='Projects'
                   path='/products'

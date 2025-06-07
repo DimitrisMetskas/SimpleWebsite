@@ -6,7 +6,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-            Find Us There   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+            Our Location   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
         </p>
         {/* <div className='input'>
             <form>
@@ -19,7 +19,7 @@ function Footer() {
           <img  className='footer-image fade-img' src={logo} alt=""></img> 
         </a>
         <p className='footer-subscription-heading'>
-          Or Contact With Us Here    <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+          Contact Us   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
         </p>
       </section>
             
