@@ -1,4 +1,4 @@
-import './ProductGallery.css';
+import './ProjectGallery.css';
 import Slider from './Slider'
 
 const sliderData = [
@@ -84,13 +84,13 @@ const sliderData = [
   ],
 ];
 
-function ProductGallery() {
+function ProjectGallery() {
   return (
     <div className='cards'> 
-      <h1>Licensing</h1>
-      <Slider images={sliderData[0]} />
       <h1>Building Plans</h1>
       <Slider images={sliderData[1]} />
+      <h1>Licensing</h1>
+      <Slider images={sliderData[0]} />
       <h1>Energy Upgrade</h1>
       <Slider images={sliderData[2]} />
 
@@ -102,4 +102,4 @@ function ProductGallery() {
   )
 }
 
-export default ProductGallery
+export default ProjectGallery

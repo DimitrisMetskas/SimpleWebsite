@@ -9,11 +9,17 @@ function Navbar() {
     const handleClick = () =>setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        closeMobileMenu();
+    };
+
+
     return (
     <>
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                <Link to='/' className='navbar-logo' onClick={scrollToTop}>
                     <strong>S&A Engineering</strong>
                     <img className='navbar-image' src={logo} alt=""></img> 
                     {/* <i className='fab fa-typo3'/> */}
@@ -27,17 +33,17 @@ function Navbar() {
                 {/* na anoigei to menu */}
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            <strong>Projects</strong>                            
+                        <Link to='/our-projects' className='nav-links' onClick={scrollToTop}>
+                            <strong>Our Projects</strong>                            
                         </Link>    
                     </li>
                     <li className='nav-item'>
-                        <Link to='/our-story' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/our-story' className='nav-links' onClick={scrollToTop}>
                             <strong>Our Story</strong>
                         </Link>    
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/contact' className='nav-links' onClick={scrollToTop}>
                             <strong>Contact</strong>
                         </Link>    
                     </li>

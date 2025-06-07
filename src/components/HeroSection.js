@@ -14,11 +14,10 @@ function HeroSection() {
             {/* <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
                 Learn More
             </Button> */}
-            <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
+            {/* <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
                 Our Projects 
                 <i class="fa fa-codepen" style={{ marginLeft: "10px" }} aria-hidden="true"></i>
-
-            </Button>
+            </Button> */}
         </div>
     </div>
   );

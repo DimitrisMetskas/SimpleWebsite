@@ -2,19 +2,23 @@ h1 {
   text-align: center;
   color:#171310;
 }
-p {
+.homeabout__container p {
   margin-top: 20px;
-  color:#171310; 
   text-align: justify;
   text-indent: 2em;
   font-family: 'Georgia', serif;
   font-size: 1.1em;
   line-height: 1.6;
   color: #333;
+  width: 100%; /* Ensures full-width usage */
+  word-wrap: break-word; /* Breaks long words when necessary */
+  overflow-wrap: break-word; /* Prevents overflow issues */
+  word-break: break-word; /* Allows proper word breaking */
+  hyphens: auto; 
 }
 .homeabout {
   padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   padding-right: 10%;
   padding-left: 10%;
   /* background-color: #fff; */
@@ -67,5 +71,7 @@ p {
   .homeabout__wrapper {
     width: 100%;
 }
-
+  .homeabout {
+    padding-top: 0;
+  }
 }

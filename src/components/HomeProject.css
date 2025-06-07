@@ -1,6 +1,7 @@
 .homeproject {
-  padding: 1rem;
   background: #fff;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 h1 {
@@ -25,3 +26,8 @@ h1 {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 660px) {
+  .homeproject {
+    padding-bottom: 0;
+  }
+}

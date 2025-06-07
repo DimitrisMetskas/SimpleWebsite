@@ -1,11 +1,30 @@
 .cards {
-  padding: 4rem;
+  /* edo itan 4 rem to padding */
+  padding: 1rem;
   background: #fff;
 }
 
-h1 {
+.cards h1 {
   text-align: center;
-  
+  margin-top: 5%;
+  margin-bottom: 2%;
+
+  font-size: 48px; /* Large and bold */
+  font-weight: bold; /* Strong presence */
+  text-transform: uppercase; /* Professional look */
+  color: #222; /* Dark and sleek */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  position: relative;
+}
+
+.cards h1::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 4px;
+  /* background-color: #0078D4; Blue engineering theme */
+  background-color: #3c4c76;
+  margin: 10px auto 0;
 }
 
 .cards__container {
@@ -57,20 +76,6 @@ h1 {
   animation-duration: 2s;
 }
 
-.cards__item__pic-wrap::after {
-  content: attr(data-category);
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
-  max-width: calc((100%) - 60px);
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #1f98f4;
-  box-sizing: border-box;
-}
-
 .cards__item__img {
   position: absolute;
   top: 0;
@@ -115,5 +120,17 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .cards h1 {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+
+
+  .cards h1::after {
+    content: none;
   }
 }

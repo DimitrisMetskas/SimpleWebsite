@@ -6,7 +6,7 @@
 }
 
 .home,
-.products,
+.our-projects,
 .our-story,
 .contact {
   display: flex;
@@ -16,14 +16,13 @@
   font-size: 3rem;
 }
 
-.products {
+.our-projects {
   background-image: url('/public/images/logo14.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
   font-size: 100px;
-  
 }
 .our-story {
   background-image: url('/public/images/logo-21.jpg');
@@ -44,7 +43,7 @@
 
 /* edo metria othoni */
 @media (max-width: 760px) {
-.products,
+.our-projects,
 .contact,
 .our-story {
     font-size: 80px;
@@ -54,7 +53,7 @@
 
 /* edo mikri othoni */
 @media (max-width: 428px) {
-  .products,
+  .our-projects,
   .our-story,
   .contact {
     font-size: 40px;
