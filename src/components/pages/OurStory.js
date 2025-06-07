@@ -4,7 +4,7 @@ import '../../App.css'
 
 export default function OurStory() {
   return (
-    <h1 className='our-story'>OURSTORY</h1>
+    <h1 className='our-story'>Our Story</h1>
   )
 }
 
