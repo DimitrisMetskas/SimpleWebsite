@@ -27,16 +27,15 @@ function Navbar() {
                 {/* na anoigei to menu */}
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
+                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            <strong>Projects</strong>                            
+                        </Link>    
+                    </li>
+                    <li className='nav-item'>
                         <Link to='/our-story' className='nav-links' onClick={closeMobileMenu}>
                             <strong>Our Story</strong>
                         </Link>    
                     </li>
-                    <li className='nav-item'>
-                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            <strong>Products</strong>                            
-                        </Link>    
-                    </li>
-
                     <li className='nav-item'>
                         <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                             <strong>Contact</strong>
