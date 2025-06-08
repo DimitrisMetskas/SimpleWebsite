@@ -9,7 +9,7 @@ const Slider = ({ images }) => {
 
   return (
     <>
-      <div role="Slider" className="slider-container">
+      <div  className="slider-container">
         <button className="prev" onClick={prevSlide}>{"<"}</button>
         <div className="slider">
           <h3>{images[index].alt}</h3>
