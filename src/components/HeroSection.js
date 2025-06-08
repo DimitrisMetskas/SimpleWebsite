@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function HeroSection() {
   const { t } = useTranslation();
   return (
-    <div role="homepage" className='hero-container'>
+    <div  className='hero-container'>
 
         <h1>{t('herosection.h1')}</h1>
         {/* <h1>Σχεδιάζουμε το μέλλον σας!</h1> */}
