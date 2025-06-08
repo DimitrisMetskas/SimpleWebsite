@@ -8,6 +8,11 @@ import Home from './components/pages/Home.js';
 import OurProjects from './components/pages/OurProjects.js';
 import Contact from './components/pages/Contact.js';
 import OurStory from './components/pages/OurStory.js';
+// to chatgpt ayto protinei:
+// npm uninstall i18next react-i18next
+// npm install i18next@22.4.9 react-i18next@15.0.1
+
+
 //gia na egkatastiso translator : 
 //npm install i18next react-i18next --legacy-peer-deps
 //kanoume ena arxeio mesa sto src me onoma i18n.js 
