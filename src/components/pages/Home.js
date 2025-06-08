@@ -9,10 +9,15 @@ import HomeProject from '../HomeProject';
 function Home (){
     return (
         <>
+        <main>
             <HeroSection />
             <HomeProject />
             <HomeAbout />
+        </main>
+        <footer>
             <Footer />
+        </footer>
+
         </>
     )
 }

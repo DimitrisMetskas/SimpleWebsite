@@ -4,7 +4,7 @@ import './Cards.css';
 
 function Cards() {
   return (
-    <div className='cards'> 
+    <div role="This is a card slider div" className='cards'> 
       <h1>Check out this epic destinations!</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>

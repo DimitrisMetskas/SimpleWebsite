@@ -5,7 +5,7 @@ function LanguageSwitcher() {
   const currentLang = i18n.language;
 
   return (
-    <div className="language-switcher" role="group" aria-label="Language Selection">
+    <div className="language-switcher" role="this is the translator switch" aria-label="Language Selection">
       <button
         className={`language-btn${currentLang === 'en' ? ' active' : ''}`}
         onClick={() => i18n.changeLanguage('en')}
