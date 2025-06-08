@@ -2,10 +2,10 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css';
 import logo from '../assets/small-logo1.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Navbar() {
     const [click, setClick]= useState(false);
-
     const handleClick = () =>setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
@@ -13,8 +13,7 @@ function Navbar() {
         window.scrollTo({ top: 0, behavior: "smooth" });
         closeMobileMenu();
     };
-
-
+    const { t } = useTranslation();
     return (
     <>
         <nav className='navbar'>
@@ -22,29 +21,24 @@ function Navbar() {
                 <Link to='/' className='navbar-logo' onClick={scrollToTop}>
                     <strong>S&A Engineering</strong>
                     <img className='navbar-image' src={logo} alt=""></img> 
-                    {/* <i className='fab fa-typo3'/> */}
-                    {/* <span class="material-symbols-outlined">bolt</span> */}
-                    {/* <i className='fa-solid fa-cloud'/> */}
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
-                        {/* na allazei apo sandwitch bar se X */}
                     <i className={click? 'fas fa-times':'fas fa-bars'} />
                 </div>
-                {/* na anoigei to menu */}
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/our-projects' className='nav-links' onClick={scrollToTop}>
-                            <strong>Our Projects</strong>                            
+                            <strong>{t('navbar.projects')}</strong>                            
                         </Link>    
                     </li>
                     <li className='nav-item'>
                         <Link to='/our-story' className='nav-links' onClick={scrollToTop}>
-                            <strong>Our Story</strong>
+                            <strong>{t('navbar.story')}</strong>
                         </Link>    
                     </li>
                     <li className='nav-item'>
                         <Link to='/contact' className='nav-links' onClick={scrollToTop}>
-                            <strong>Contact</strong>
+                            <strong>{t('navbar.contact')}</strong>
                         </Link>    
                     </li>
                 </ul>

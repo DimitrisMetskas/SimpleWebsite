@@ -3,9 +3,24 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
-
-h1 {
+.homeproject h1 {
   text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 48px; /* Large and bold */
+  font-weight: bold; /* Strong presence */
+  text-transform: uppercase; /* Professional look */
+  color: #222; /* Dark and sleek */
+  letter-spacing: 2px; /* Adds spacing between letters */
+  position: relative;
+}
+.homeproject h1::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 4px;
+  background-color: #3c4c76;
+  margin: 10px auto 0;
 }
 
 .homeproject__container {
@@ -29,5 +44,13 @@ h1 {
 @media screen and (max-width: 660px) {
   .homeproject {
     padding-bottom: 0;
+  }
+  .homeproject h1 {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+
+  .homeproject h1::after {
+    content: none;
   }
 }
