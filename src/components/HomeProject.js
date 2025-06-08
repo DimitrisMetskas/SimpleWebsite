@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function HomeProject() {
   const { t } = useTranslation();
   return (
-    <div role="this is the main body of home page" className='homeproject'> 
+    <div role="HomePage" className='homeproject'> 
       <h1>{t('homeproject.h1')}</h1>
       <div className='homeproject__container'>
         <div className='homeproject__wrapper'>

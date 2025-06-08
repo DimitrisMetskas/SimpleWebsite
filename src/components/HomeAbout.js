@@ -13,7 +13,7 @@ function HomeAbout() {
   };
   const { t } = useTranslation();
   return (
-    <div role="this is the main body of home page second part" className='homeabout'> 
+    <div role="HomeAbout" className='homeabout'> 
       <div className='homeabout__container'>
         {/* <img loading="lazy" alt="" src=""></img> */}
             <img className="homeabout-image"  src={logo} alt="Image of the office logo"></img> 

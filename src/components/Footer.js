@@ -6,7 +6,7 @@ function Footer() {
   const { t } = useTranslation();
 
   return (
-    <div role="this the footer" className='footer-container'>
+    <div role="Footer" className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
             {t('footer.location')}   <i class="fa fa-hand-o-down" aria-hidden="true"></i>

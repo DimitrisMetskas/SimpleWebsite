@@ -85,7 +85,7 @@ const sliderData = [
 function ProjectGallery() {
   const { t } = useTranslation();
   return (
-    <div role="This is main body of project page" className='cards'> 
+    <div role="ProjectGallery" className='cards'> 
       <h1>{t('projectgallary.building')}</h1>
       <Slider images={sliderData[1]} />
       <h1>{t('projectgallary.licensing')}</h1>

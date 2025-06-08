@@ -16,7 +16,7 @@ function Navbar() {
     const { t } = useTranslation();
     return (
     <>
-        <nav role="this is navigation bar" className='navbar'>
+        <nav role="NavigationBar" className='navbar'>
             <div className='navbar-container'>
                 <Link alt="Link to home page" to='/' className='navbar-logo' onClick={scrollToTop}>
                     <strong>S&A Engineering</strong>
