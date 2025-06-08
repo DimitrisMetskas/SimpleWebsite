@@ -1,12 +1,15 @@
 import './Footer.css';
 import logo from '../assets/map.png';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-            Our Location   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+            {t('footer.location')}   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
         </p>
         {/* <div className='input'>
             <form>
@@ -19,7 +22,7 @@ function Footer() {
           <img  className='footer-image fade-img' src={logo} alt=""></img> 
         </a>
         <p className='footer-subscription-heading'>
-          Contact Us   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
+          {t('footer.contact')}   <i class="fa fa-hand-o-down" aria-hidden="true"></i>
         </p>
       </section>
             

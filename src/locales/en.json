@@ -1,0 +1,41 @@
+{
+  "welcome": "Welcome",
+  "about": "About Us",
+  "projects": "Our Projects",
+  "contact": "Contact",
+  "ourprojects": {
+    "projects": "Our Projects"
+  },
+  "ourstory": {
+    "story": "Our Story"
+  },
+  "contactus": {
+    "contactus": "Contact Us"
+  },
+  "footer": {
+    "location": "Our Location",
+    "contact": "Contact Us"
+  },
+  "herosection": {
+    "h1": "Let Us Design Your Future"
+  },
+  "homeabout": {
+    "h1": "About Us",
+    "p": "We are a modern engineering firm specializing in architectural and structural design, construction, and project licensing. With expertise and professionalism, we deliver high-quality solutions that combine aesthetics and functionality, ensuring complete client satisfaction.",
+    "button": "Find Out More"
+  },
+  "homeproject": {
+    "h1": "Gallery & Projects",
+    "text": "Architectural Design, Structural Engineering, Building Permits, Construction & Renovation,Energy Efficiency Upgrades"
+  },
+  "navbar": {
+    "projects": "Our Projects",
+    "story": "Our Story",
+    "contact": "Contact"
+  },
+  "projectgallary": {
+    "building": "Building Plans",
+    "licensing": "Licensing",
+    "energy": "Energy Upgrade"
+  }
+}
