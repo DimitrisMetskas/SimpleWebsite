@@ -16,7 +16,7 @@ function HomeAbout() {
     <div className='homeabout'> 
       <div className='homeabout__container'>
         {/* <img loading="lazy" alt="" src=""></img> */}
-            <img className="homeabout-image"  src={logo} ></img> 
+            <img className="homeabout-image"  src={logo} alt=''></img> 
             <div className='homeabout__wrapper'>
               <h1>{t('homeabout.h1')}</h1>
               <p>{t('homeabout.p')} </p>
